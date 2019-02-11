@@ -31,7 +31,7 @@ class OnlineTest extends JFrame implements ActionListener {
 		add(b1);
 		add(b2);
 		set();
-		l.setBounds(30, 40, 450, 20);
+		l.setBounds(20, 10, 450, 50);
 		jb[0].setBounds(50, 80, 100, 20);
 		jb[1].setBounds(50, 110, 100, 20);
 		jb[2].setBounds(50, 140, 100, 20);
@@ -95,14 +95,14 @@ class OnlineTest extends JFrame implements ActionListener {
 	void set() {
 		jb[4].setSelected(true);
 		if (current == 0) {
-			l.setText("Que1: What will the println statement in the following program segment display?\nint x = 5;\nSystem.out.println(x++);");
+			l.setText("<HTML> Que1: What will the println statement in the following program segment display? int x = 5; <br> System.out.println(x++)</HTML>");
 			jb[0].setText("5");
 			jb[1].setText("6");
 			jb[2].setText("0");
-			jb[3].setText("None of these");
+			jb[3].setText("<HTML> None of these </HTML>");
 		}
 		if (current == 1) {
-			l.setText("Que2: What will the println statement in the following program segment display?\\nint x = 5;\\nSystem.out.println(++x)");
+			l.setText("<HTML> Que2: What will the println statement in the following program segment display?int x = 5;<br>System.out.println(++x)</HTML>");
 			jb[0].setText("5");
 			jb[1].setText("6");
 			jb[2].setText("0");
@@ -164,7 +164,7 @@ class OnlineTest extends JFrame implements ActionListener {
 			jb[2].setText("while");
 			jb[3].setText("if-else");
 		}
-		l.setBounds(30, 40, 450, 20);
+		l.setBounds(20, 10, 450, 50);
 		for (int i = 0, j = 0; i <= 90; i += 30, j++)
 			jb[j].setBounds(50, 80 + i, 200, 20);
 	}
