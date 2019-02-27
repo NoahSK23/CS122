@@ -93,7 +93,7 @@ class newChapter extends JFrame implements ActionListener {
 		jb[5].setSelected(true);
 		if (current == 0) {
 			l.setText(
-					"<html>Que1: What is the most efficient loop for reading through an array?");
+					"<html>Que1: What is the most efficient loop <br> for reading through an array?");
 			jb[0].setText("While");
 			jb[1].setText("do-While");
 			jb[2].setText("for");
@@ -115,7 +115,7 @@ class newChapter extends JFrame implements ActionListener {
 			jb[1].setText("<html>Yes, as a value-return method");
 			jb[2].setText("No");
 			jb[3].setText("<html>Yes, as a void or value return method");
-			jb[4].setText("<html>Yes, as an array-returning method");
+			jb[4].setText("<html>Yes, as an array-returning <br> method");
 		}
 		if (current == 3) {
 			l.setText("Que4: With Swing, you use this class to create a frame.");
@@ -174,7 +174,7 @@ class newChapter extends JFrame implements ActionListener {
 			jb[4].setText("a(4)");
 		l.setBounds(50, 40, 950, 50);
 		for (int i = 90, j = 0; i <= 210; i += 30, j++)
-			jb[j].setBounds(50, i, 200, 20);
+			jb[j].setBounds(50, i, 200, 40);
 		}
 	}
 
