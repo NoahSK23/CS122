@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-class onlineTestNEW extends JFrame implements ActionListener {
+class newChapter extends JFrame implements ActionListener {
 	JLabel l;
 	JRadioButton jb[] = new JRadioButton[6];
 	JButton b1, b2;
@@ -10,7 +10,7 @@ class onlineTestNEW extends JFrame implements ActionListener {
 	int count = 0, current = 0, x = 1, y = 1, now = 0;
 	int m[] = new int[10];
 
-	onlineTestNEW(String s) {
+	newChapter(String s) {
 		super(s);
 		l = new JLabel();
 		add(l);
@@ -78,6 +78,7 @@ class onlineTestNEW extends JFrame implements ActionListener {
 				current = now;
 			}
 		}
+
 		if (e.getActionCommand().equals("Result")) {
 			if (check())
 				count = count + 1;
@@ -171,10 +172,10 @@ class onlineTestNEW extends JFrame implements ActionListener {
 			jb[2].setText("a[3]");
 			jb[3].setText("a(3)");
 			jb[4].setText("a(4)");
-		}
 		l.setBounds(50, 40, 950, 50);
-		for(int i=90,j=0;i<=210;i+=30,j++)
-			jb[j].setBounds(50,i,200,20);
+		for (int i = 90, j = 0; i <= 210; i += 30, j++)
+			jb[j].setBounds(50, i, 200, 20);
+		}
 	}
 
 	boolean check() {
@@ -202,7 +203,7 @@ class onlineTestNEW extends JFrame implements ActionListener {
 	}
 
 	public static void main(String s[]) {
-		new onlineTestNEW("Online Test Of Java");
+		new newChapter("Online Test Of Java");
 	}
 
 }
