@@ -203,7 +203,7 @@ class newChapter extends JFrame implements ActionListener {
 	}
 
 	public static void main(String s[]) {
-		new newChapter("Online Test Of Java");
+		new newChapter("Chaper 6 & 7 Quiz");
 	}
 
 }
