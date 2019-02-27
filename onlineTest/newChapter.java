@@ -190,7 +190,7 @@ class newChapter extends JFrame implements ActionListener {
 		if (current == 4)
 			return (jb[2].isSelected());
 		if (current == 5)
-			return (jb[2].isSelected());
+			return (jb[1].isSelected());
 		if (current == 6)
 			return (jb[4].isSelected());
 		if (current == 7)
